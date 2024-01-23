@@ -5,6 +5,8 @@ using namespace std;
  
 int main()
 {
+    // int as; cin>>as;
+    // cout<<6;
     int x = 0;
     for (int i = 0; i < 5; ++i)
     {
