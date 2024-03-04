@@ -9,24 +9,8 @@
     // const int mod=1e9+7;
 
     void solve(){
-        ll a,b,c; cin>>a>>b>>c;
-        //  cout<<(a|b)<<endl;
-        if(a<b) swap(a,b);
-        ll ans = a-b, cnt=0, mn=ans;
-        for(int i=60; i>=0; i--){
-            if(((b>>i)&1)==0 && ((a>>i)&1)==1 && cnt+(1ll<<i)<=c){
-                if(ans>=2*(1ll<<i)){
-                    cnt+=(1ll<<i);
-                    ans-=2*(1ll<<i);
+       cout<<10%3;
 
-                }
-                else{
-                    mn = min(mn,2*(1ll<<i)-ans);
-                }
-            }
-
-        }
-        cout<<min(ans,mn)<<endl;
     }
 
     int main(){
